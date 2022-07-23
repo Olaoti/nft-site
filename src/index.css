@@ -1,5 +1,10 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +15,41 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+:root{
+  --color-black: #10061E;
+  --color-white: #fff;
+  --color-pry1: rgba(252, 71, 84, 0.9);
+  --color-pry2: rgba(252, 71, 84, 0.55);
+  --color-pry-light:rgba(252, 71, 84, 0.1);
+}
+html{
+  font-size: 62.5%;
+  font-family: 'Roboto';
+}
+body{
+  background-color: var(--color-black);
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+.btn{
+  width: fit-content;
+  font-size: 1.7rem;
+  padding: 1.3rem 2.3rem;
+  border-radius: 4px;
+  transition: all 400ms ease;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: var(--color-pry-light) ;
+  color: var(--color-pry1);
+}
+.btn_fillpry{
+  background-color: var(--color-pry1);
+  color: var(--color-white);
+}
+.btn_fillwhite{
+  border: 1px solid var(--color-pry2);
+  color: var(--color-pry1);
 }

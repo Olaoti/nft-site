@@ -1,0 +1,33 @@
+.bigBg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow-x:hidden ;
+    overflow-y:hidden ;
+}
+.bigBg>div{
+    position: absolute;
+    background-color: #FC4754;
+    border-radius: 50%;
+}
+.bigBg>div:nth-child(1){
+    width: 262px;
+    height: 262px;
+    left: -188px;
+    top: 10vh;
+    filter: blur(150px);
+}
+.bigBg>div:nth-child(2){
+    width: 26rem;
+    height: 26rem;
+    right: 15vw;
+    top: 45vh;
+    filter: blur(110px);
+}
+.bigBg>div:nth-child(3){
+    width: 351px;
+    height: 271px;
+    left: 28vw;
+    bottom: -30vh;
+    filter: blur(80px);
+}

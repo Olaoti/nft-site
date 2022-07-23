@@ -1,0 +1,46 @@
+.background{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+}
+.background>div{
+    background: rgba(255, 130, 139, 0.62);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5;
+}
+.background>div:nth-child(1){
+    width: 8px;
+    height: 8px;
+    margin-left: 20vw;
+    top: 25vh;
+}
+.background>div:nth-child(2){
+    width: 14px;
+    height: 14px;    
+    filter: blur(4px);
+    margin-left: 45vw;
+    margin-top: 30vh;
+}
+.background>div:nth-child(3){
+    width: 8px;
+    height: 8px;
+    margin-left: 50vw;
+    margin-top: 45vh;
+    background: rgba(255, 130, 139, 0.62);
+}
+.background>div:nth-child(4){
+    width: 8px;
+    height: 8px;
+    margin-left: 25vw;
+    bottom: 25vh;
+    background: rgba(255, 130, 139, 0.62);
+}
+.background>div:nth-child(5){
+    width: 14px;
+    height: 14px;    
+    filter: blur(4px);
+    margin-left: 3rem;
+    bottom: 20vh;
+}

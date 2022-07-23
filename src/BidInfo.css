@@ -1,0 +1,36 @@
+.bidInfo{
+    position: absolute;
+    display: flex;
+    align-items:center ;
+    height: fit-content;
+    width: max-content;
+    padding: 1.3rem;
+    background: linear-gradient(91.03deg, rgba(255, 254, 254, 0.23) -47.11%, rgba(255, 254, 254, 0.23) 110.32%);
+    border-radius: 5px;
+    bottom: 4rem;
+    margin-left: -50%;
+}
+.current{
+    padding-right: 5rem;
+}
+.time{
+    padding-right: 2rem;
+}
+.current_name, .time_info{
+    margin-bottom: 0.6rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 141.69%;
+    color:  rgba(255, 255, 255, 0.7);
+}
+.current_value, .countdown{
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 141.69%;
+}
+.bidInfo .btn{
+    border: 1px solid white;
+}
+.bidInfo .btn:hover{
+    color: white;
+}
