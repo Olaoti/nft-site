@@ -25,8 +25,8 @@ function Nav() {
     }
   };
   return (
-    <header className={`nav ${navBg && "navBg"}`}>
-      <div className="mobile-nav">
+    <header className="nav">
+      <div className={`mobile-nav ${navBg && "navBg"}`}>
         <div className="logo">
           <span>GAND</span>isbr
         </div>

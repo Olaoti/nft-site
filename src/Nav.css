@@ -87,6 +87,7 @@ header.nav{
     .navLinks ul li{
         display: block;
         padding-top: 3rem;
+        padding-right: 0;
     }
     .navLinks .btn{
         margin: 2rem auto;
