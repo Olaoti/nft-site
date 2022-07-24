@@ -12,9 +12,7 @@ header.nav{
     align-items: center;
     justify-content: space-between;
 }
-.navBg{
-    background-color: #10061E;
-}
+
 .logo{
     margin-right: auto;
     font-size: 2.3rem;
@@ -56,7 +54,6 @@ header.nav{
         display: block;
         width: 2.8rem;
         height: 0.5rem;
-        background-color: red;
         background: radial-gradient( white, var(--color-pry1));
         border-radius: 10px;
         transition: all 300ms ease;
@@ -76,13 +73,25 @@ header.nav{
         transform: rotate(45deg);
         margin-top: -0.75rem;
     }
+    .navBg{
+        background: linear-gradient(135deg, rgba(255,255,255,0.02), rgba(255,255,255,0));
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+        border: 1px solid rgba(252, 71, 84, 0.1);
+    }
     .navLinks{
         display: block;
         width: 100%;
         z-index: 12;
         text-align: center;
         padding: 5rem;
-        background-color: #10061E;
+        /*background-color: #10061E;*/
+        background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0));
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+        border: 1px solid rgba(252, 71, 84, 0.1);
     }
     .navLinks ul li{
         display: block;
