@@ -22,25 +22,47 @@
 .description__nav_buttons .btn_fillpry{
     margin-right: 2.5rem;
 }
-.stats{
-    padding-top: 7.5rem;
-    display: flex;
+
+@media screen and (max-width:1075px){
+    .nftDescription .description__head{
+        font-size:4.2rem;
+        line-height: 5rem;
+    }
+    .description__text{
+        font-size: 1.6rem;
+        line-height: 2.3rem;
+        padding-right: 10rem;
+    }
+  }
+@media screen and (max-width:930px) {
+    .nftDescription .description__head{
+        font-size:3.8rem;
+        line-height: 4.6rem;
+        padding-right: 6rem;
+    }
 }
-.stats>div{
-    margin-right: 2.2rem;
+@media screen and (max-width:600px) {
+    .nftDescription{
+        padding-right: 1rem;
+    }
+    .description__text{
+        padding-right: 3rem;
+    }
 }
-.stats .stats_value{
-    font-weight: 500;
-    font-size: 2.8rem;
-    line-height: 140%;
-}
-.stats .stats-name{
-    font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 141.69%;
-}
-.stats .line{
-    width: 1px;
-    background-color: var(--color-white);
-    height: auto;
+@media screen and (max-width:450px) {
+    .nftDescription{
+        padding-right: 0;
+    }
+    .nftDescription .description__head{
+        font-size:3.4rem;
+        line-height: 4.2rem;
+    }
+    .description__text{
+        font-size: 1.5rem;
+        line-height: 2.1rem;
+        padding-right: 2rem;
+    }
+    .description__nav_buttons .btn_fillpry{
+        margin-right: 2rem;
+    }
 }

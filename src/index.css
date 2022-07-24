@@ -53,3 +53,20 @@ body{
   border: 1px solid var(--color-pry2);
   color: var(--color-pry1);
 }
+@media screen and (max-width:950px) {
+  .btn{
+    padding: 1rem 2rem;
+  }
+}
+@media screen and (max-width:450px) {
+  .btn{
+    padding:0.75rem 1rem;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width:330px) {
+  .btn{
+    padding:0.45rem 0.5rem;
+    font-size: 1.2rem;
+  }
+}
