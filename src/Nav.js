@@ -1,10 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { gsap } from "gsap";
 import "./Nav.css";
 
 function Nav() {
+  const navRef = useRef(null);
+  useEffect(() => {
+    gsap.fromTo(
+      navRef.current,
+      { y: "-100", opacity: "0.5" },
+      { y: "0", opacity: "1", duration: "1", ease: "bounce" }
+    );
+  }, [navRef]);
   const [navBg, setNavBg] = useState(false);
   const handleScroll = () => {
-    if (window.scrollY > 50) {
+    if (window.scrollY > 40) {
       setNavBg(true);
     } else {
       setNavBg(false);
@@ -25,7 +34,7 @@ function Nav() {
     }
   };
   return (
-    <header className="nav">
+    <header className="nav" ref={navRef}>
       <div className={`mobile-nav ${navBg && "navBg"}`}>
         <div className="logo">
           <span>GAND</span>isbr
